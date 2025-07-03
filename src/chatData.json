@@ -1,0 +1,70 @@
+[
+  {
+    "id": 1,
+    "message": "Hello! I am Hexa. How can I assist you today?",
+    "options": [
+      { "label": "Reset my Salesforce password", "nextId": 2 },
+      { "label": "Integrate Salesforce with Outlook", "nextId": 3 },
+      { "label": "Other issues", "nextId": 4 }
+    ]
+  },
+  {
+    "id": 2,
+    "message": "Sure, to reset your Salesforce password: Go to Settings > My Personal Information > Reset My Password. Did this solve your issue?",
+    "options": [
+      { "label": "Yes, problem solved", "nextId": 5 },
+      { "label": "No, need more help", "nextId": 6 }
+    ]
+  },
+  {
+    "id": 3,
+    "message": "To integrate with Outlook: Download Salesforce for Outlook from Setup. Need a step-by-step guide?",
+    "options": [
+      { "label": "Yes, show me guide", "nextId": 7 },
+      { "label": "No, I will try myself", "nextId": 5 }
+    ]
+  },
+  {
+    "id": 4,
+    "message": "Please briefly describe your issue or pick a common support area.",
+    "options": [
+      { "label": "Billing", "nextId": 8 },
+      { "label": "User Management", "nextId": 9 }
+    ]
+  },
+  {
+    "id": 5,
+    "message": "Glad I could help! If you have another question, click below.",
+    "options": [
+      { "label": "Start Over", "nextId": 1 }
+    ]
+  },
+  {
+    "id": 6,
+    "message": "No worries! I'll connect you with a live agent. Please wait...",
+    "options": []
+  },
+  {
+    "id": 7,
+    "message": "Step 1: Go to Setup in Salesforce. Step 2: Search for Outlook Integration. Step 3: Follow instructions to download and install. Anything else?",
+    "options": [
+      { "label": "No, thank you!", "nextId": 5 },
+      { "label": "Yes, more help", "nextId": 6 }
+    ]
+  },
+  {
+    "id": 8,
+    "message": "For billing issues, please contact billing@yourcompany.com or use the Help Center. Anything else?",
+    "options": [
+      { "label": "No, thanks", "nextId": 5 }
+    ]
+  },
+  {
+    "id": 9,
+    "message": "User management issues often require admin access. Should I send you the admin help docs?",
+    "options": [
+      { "label": "Yes, send docs", "nextId": 7 },
+      { "label": "No, that's OK", "nextId": 5 }
+    ]
+  }
+]

@@ -1,0 +1,73 @@
+.nav-menu-landing {
+  position: absolute;
+  top: 2.1rem;
+  right: 3.6rem;
+  display: flex;
+  gap: 2.5rem;
+  z-index: 2;
+}
+
+.nav-menu-landing a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
+  transition: color 0.15s;
+}
+.nav-menu-landing a:hover {
+  color: #00B388;
+}
+
+.landing-center {
+  width: 100vw;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-logo {
+  width: 1000px;
+  max-width: 82vw;
+  margin-bottom: 2.6rem;
+  display: block;
+}
+
+.landing-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-left: 100px;
+}
+
+.landing-btn {
+  width: 1000px;
+  max-width: 85vw;
+  padding: 1.35rem 0;
+  margin: 0.6rem 0;
+  border-radius: 19px;
+  background: #fff;
+  color: #01492e;
+  font-size: 1.37rem;
+  font-weight: 700;
+  border: none;
+  box-shadow: 0 3px 18px #00b38828;
+  cursor: pointer;
+  transition: background 0.16s, color 0.16s, box-shadow 0.16s;
+  letter-spacing: 0.03em;
+}
+.landing-btn:hover {
+  background: #000000;
+  color: #fff;
+  box-shadow: 0 6px 32px #00b38855;
+}
+.header-logo-img {
+  height: 54px; /* Or adjust as needed */
+  width: auto;
+  margin-right: 18px;
+  margin-top: 4px;
+  display: block;
+}
