@@ -1,0 +1,60 @@
+.va-bg {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f8fafc;
+  padding-top: 80px;
+}
+
+.va-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.va-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px #00806011;
+  display: flex;
+  align-items: center;
+  padding: 1.1rem 2.2rem;
+  min-width: 240px;
+  max-width: 320px;
+  gap: 1.5rem;
+  transition: transform 0.16s;
+}
+
+.va-card.online:hover {
+  transform: scale(1.045);
+  box-shadow: 0 8px 32px #00b38833;
+}
+
+.va-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid #00b38844;
+  object-fit: cover;
+}
+
+.va-name {
+  font-size: 1.21rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.va-status {
+  font-size: 0.99rem;
+  font-weight: 500;
+  margin-top: 0.1rem;
+}
+.va-status.online {
+  color: #00b388;
+}
+.va-status.offline {
+  color: #888;
+}

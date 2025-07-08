@@ -1,70 +1,391 @@
 [
   {
     "id": 1,
-    "message": "Hello! I am Hexa. How can I assist you today?",
+    "message": "Welcome to Salesforce Global Support! Are you a new Salesforce user or an existing user?",
     "options": [
-      { "label": "Reset my Salesforce password", "nextId": 2 },
-      { "label": "Integrate Salesforce with Outlook", "nextId": 3 },
-      { "label": "Other issues", "nextId": 4 }
+      { "label": "I'm new to Salesforce", "nextId": 2 },
+      { "label": "I'm an existing user", "nextId": 10 },
+      { "label": "Other / Not sure", "nextId": 100 }
     ]
   },
+
+
   {
     "id": 2,
-    "message": "Sure, to reset your Salesforce password: Go to Settings > My Personal Information > Reset My Password. Did this solve your issue?",
+    "message": "Welcome! Here are some common topics for new users:",
     "options": [
-      { "label": "Yes, problem solved", "nextId": 5 },
-      { "label": "No, need more help", "nextId": 6 }
+      { "label": "How do I access Salesforce for the first time?", "nextId": 3 },
+      { "label": "Getting started with basic navigation", "nextId": 4 },
+      { "label": "Learning Salesforce basics (Trailhead)", "nextId": 5 },
+      { "label": "About my user profile and settings", "nextId": 6 },
+      { "label": "Return to Main Menu", "nextId": 1 }
     ]
   },
   {
     "id": 3,
-    "message": "To integrate with Outlook: Download Salesforce for Outlook from Setup. Need a step-by-step guide?",
+    "message": "To access Salesforce, use the login link sent to your email. Your username is typically your work email. If you don't have login credentials, please contact your Salesforce admin.",
     "options": [
-      { "label": "Yes, show me guide", "nextId": 7 },
-      { "label": "No, I will try myself", "nextId": 5 }
+      { "label": "How do I reset my first-time password?", "nextId": 7 },
+      { "label": "Back to New User Help", "nextId": 2 }
     ]
   },
   {
     "id": 4,
-    "message": "Please briefly describe your issue or pick a common support area.",
+    "message": "Once logged in, you'll see the Salesforce Home page. Use the App Launcher (grid icon) to switch between apps. Main navigation is on the top. Click 'Opportunities', 'Leads', 'Contacts', etc. to explore records.",
     "options": [
-      { "label": "Billing", "nextId": 8 },
-      { "label": "User Management", "nextId": 9 }
+      { "label": "Show me a Salesforce walkthrough video", "nextId": 8 },
+      { "label": "Back to New User Help", "nextId": 2 }
     ]
   },
   {
     "id": 5,
-    "message": "Glad I could help! If you have another question, click below.",
+    "message": "Salesforce Trailhead is the best place to learn. Visit trailhead.salesforce.com and log in with your Salesforce account. Start with 'Salesforce Platform Basics'.",
     "options": [
-      { "label": "Start Over", "nextId": 1 }
+      { "label": "Open Trailhead", "nextId": 9 },
+      { "label": "Back to New User Help", "nextId": 2 }
     ]
   },
   {
     "id": 6,
-    "message": "No worries! I'll connect you with a live agent. Please wait...",
-    "options": []
+    "message": "To view or edit your profile, click your avatar at the top right and choose 'Settings'. Here you can update personal details, change your password, and set preferences.",
+    "options": [
+      { "label": "Back to New User Help", "nextId": 2 }
+    ]
   },
   {
     "id": 7,
-    "message": "Step 1: Go to Setup in Salesforce. Step 2: Search for Outlook Integration. Step 3: Follow instructions to download and install. Anything else?",
+    "message": "On the login page, click 'Forgot Your Password?'. Enter your username/email. Follow the email instructions to set a new password.",
     "options": [
-      { "label": "No, thank you!", "nextId": 5 },
-      { "label": "Yes, more help", "nextId": 6 }
+      { "label": "Back to New User Help", "nextId": 2 }
     ]
   },
   {
     "id": 8,
-    "message": "For billing issues, please contact billing@yourcompany.com or use the Help Center. Anything else?",
+    "message": "Here's a helpful Salesforce walkthrough video: https://www.youtube.com/watch?v=lfvx1rZzJfE (copy-paste into your browser).",
     "options": [
-      { "label": "No, thanks", "nextId": 5 }
+      { "label": "Back to New User Help", "nextId": 2 }
     ]
   },
   {
     "id": 9,
-    "message": "User management issues often require admin access. Should I send you the admin help docs?",
+    "message": "Trailhead: https://trailhead.salesforce.com/en/home (copy-paste into your browser).",
     "options": [
-      { "label": "Yes, send docs", "nextId": 7 },
-      { "label": "No, that's OK", "nextId": 5 }
+      { "label": "Back to New User Help", "nextId": 2 }
+    ]
+  },
+
+
+  {
+    "id": 10,
+    "message": "How can I help you today?",
+    "options": [
+      { "label": "Login or access problems", "nextId": 11 },
+      { "label": "User management", "nextId": 20 },
+      { "label": "Data import/export", "nextId": 30 },
+      { "label": "Customizing Salesforce", "nextId": 40 },
+      { "label": "Reporting & Dashboards", "nextId": 50 },
+      { "label": "Process Automation", "nextId": 60 },
+      { "label": "Integrations", "nextId": 70 },
+      { "label": "Troubleshooting errors", "nextId": 80 },
+      { "label": "Contact Support/Agent", "nextId": 200 },
+      { "label": "Return to Main Menu", "nextId": 1 }
+    ]
+  },
+
+
+  {
+    "id": 11,
+    "message": "Login & Access help:",
+    "options": [
+      { "label": "Forgot/Reset my password", "nextId": 12 },
+      { "label": "Locked out of account", "nextId": 13 },
+      { "label": "Enable or use MFA", "nextId": 14 },
+      { "label": "Can't see my records", "nextId": 15 },
+      { "label": "Back to User Menu", "nextId": 10 }
+    ]
+  },
+  {
+    "id": 12,
+    "message": "On the login page, click 'Forgot Your Password?'. Enter your username/email, and check your email for reset instructions.",
+    "options": [
+      { "label": "Back to Login Help", "nextId": 11 }
+    ]
+  },
+  {
+    "id": 13,
+    "message": "If you're locked out, contact your Salesforce administrator or support team to unlock your account.",
+    "options": [
+      { "label": "Back to Login Help", "nextId": 11 }
+    ]
+  },
+  {
+    "id": 14,
+    "message": "To enable Multi-Factor Authentication (MFA), go to 'Settings' > 'Advanced User Details' and follow MFA setup. Use Salesforce Authenticator app or your phone for codes.",
+    "options": [
+      { "label": "Back to Login Help", "nextId": 11 }
+    ]
+  },
+  {
+    "id": 15,
+    "message": "If you can't see your records, check with your admin about your profile permissions or sharing rules.",
+    "options": [
+      { "label": "Back to Login Help", "nextId": 11 }
+    ]
+  },
+
+
+  {
+    "id": 20,
+    "message": "User management options:",
+    "options": [
+      { "label": "Add a new user", "nextId": 21 },
+      { "label": "Deactivate/remove user", "nextId": 22 },
+      { "label": "Reset another user's password", "nextId": 23 },
+      { "label": "Assign/modify roles", "nextId": 24 },
+      { "label": "Back to User Menu", "nextId": 10 }
+    ]
+  },
+  {
+    "id": 21,
+    "message": "Go to 'Setup' > 'Users' > 'New User', fill in user details, and save. The new user will receive an email invitation.",
+    "options": [
+      { "label": "Back to User Management", "nextId": 20 }
+    ]
+  },
+  {
+    "id": 22,
+    "message": "To deactivate a user, go to 'Setup' > 'Users', click the user name, and select 'Deactivate'. You cannot delete users, only deactivate.",
+    "options": [
+      { "label": "Back to User Management", "nextId": 20 }
+    ]
+  },
+  {
+    "id": 23,
+    "message": "Go to 'Setup' > 'Users', select the user, and click 'Reset Password'.",
+    "options": [
+      { "label": "Back to User Management", "nextId": 20 }
+    ]
+  },
+  {
+    "id": 24,
+    "message": "To assign or modify roles, go to 'Setup' > 'Users', select the user, and change their Profile or Role as needed.",
+    "options": [
+      { "label": "Back to User Management", "nextId": 20 }
+    ]
+  },
+
+
+  {
+    "id": 30,
+    "message": "Data import/export options:",
+    "options": [
+      { "label": "Import data (CSV)", "nextId": 31 },
+      { "label": "Export data or reports", "nextId": 32 },
+      { "label": "Mass update records", "nextId": 33 },
+      { "label": "Back to User Menu", "nextId": 10 }
+    ]
+  },
+  {
+    "id": 31,
+    "message": "Use 'Data Import Wizard' in Setup to upload your CSV file. Follow on-screen instructions to map fields.",
+    "options": [
+      { "label": "Back to Data Management", "nextId": 30 }
+    ]
+  },
+  {
+    "id": 32,
+    "message": "To export data, use 'Data Export' in Setup for all data, or run a Report and click 'Export' for reports.",
+    "options": [
+      { "label": "Back to Data Management", "nextId": 30 }
+    ]
+  },
+  {
+    "id": 33,
+    "message": "For mass update, use 'Data Loader' (desktop app) or list view inline editing for smaller updates.",
+    "options": [
+      { "label": "Back to Data Management", "nextId": 30 }
+    ]
+  },
+
+
+  {
+    "id": 40,
+    "message": "Customization options:",
+    "options": [
+      { "label": "Create or edit fields", "nextId": 41 },
+      { "label": "Change page layouts", "nextId": 42 },
+      { "label": "Add or modify objects", "nextId": 43 },
+      { "label": "Back to User Menu", "nextId": 10 }
+    ]
+  },
+  {
+    "id": 41,
+    "message": "Go to 'Setup' > 'Object Manager', select an object, and add/edit fields under 'Fields & Relationships'.",
+    "options": [
+      { "label": "Back to Customization", "nextId": 40 }
+    ]
+  },
+  {
+    "id": 42,
+    "message": "In 'Setup' > 'Object Manager', pick the object, then go to 'Page Layouts' to customize field arrangement.",
+    "options": [
+      { "label": "Back to Customization", "nextId": 40 }
+    ]
+  },
+  {
+    "id": 43,
+    "message": "To create a new object, go to 'Setup' > 'Object Manager' > 'Create', and follow the steps for a custom object.",
+    "options": [
+      { "label": "Back to Customization", "nextId": 40 }
+    ]
+  },
+
+
+  {
+    "id": 50,
+    "message": "Reporting & Dashboards:",
+    "options": [
+      { "label": "Create or edit a report", "nextId": 51 },
+      { "label": "Build a dashboard", "nextId": 52 },
+      { "label": "Share reports or dashboards", "nextId": 53 },
+      { "label": "Back to User Menu", "nextId": 10 }
+    ]
+  },
+  {
+    "id": 51,
+    "message": "Go to the 'Reports' tab, click 'New Report', select a report type, and drag/drop fields. Save and run your report.",
+    "options": [
+      { "label": "Back to Reporting", "nextId": 50 }
+    ]
+  },
+  {
+    "id": 52,
+    "message": "Click 'Dashboards', 'New Dashboard', add components (charts, tables) using your saved reports.",
+    "options": [
+      { "label": "Back to Reporting", "nextId": 50 }
+    ]
+  },
+  {
+    "id": 53,
+    "message": "Open your report or dashboard, click 'Share', and choose users or public groups to share with.",
+    "options": [
+      { "label": "Back to Reporting", "nextId": 50 }
+    ]
+  },
+
+
+  {
+    "id": 60,
+    "message": "Process Automation options:",
+    "options": [
+      { "label": "Create an automation (Flow, Process Builder)", "nextId": 61 },
+      { "label": "Set up approval processes", "nextId": 62 },
+      { "label": "Automate emails or notifications", "nextId": 63 },
+      { "label": "Back to User Menu", "nextId": 10 }
+    ]
+  },
+  {
+    "id": 61,
+    "message": "Use 'Flow Builder' in Setup to create automations, or 'Process Builder' for simpler automation needs.",
+    "options": [
+      { "label": "Back to Automation", "nextId": 60 }
+    ]
+  },
+  {
+    "id": 62,
+    "message": "In 'Setup', search for 'Approval Processes', and follow the wizard to define criteria and steps.",
+    "options": [
+      { "label": "Back to Automation", "nextId": 60 }
+    ]
+  },
+  {
+    "id": 63,
+    "message": "Create Email Alerts in Workflow Rules or Flows to send automated emails based on triggers.",
+    "options": [
+      { "label": "Back to Automation", "nextId": 60 }
+    ]
+  },
+
+
+  {
+    "id": 70,
+    "message": "Integration options:",
+    "options": [
+      { "label": "Connect Salesforce to Outlook", "nextId": 71 },
+      { "label": "Use Salesforce APIs", "nextId": 72 },
+      { "label": "Connect to third-party apps (Slack, DocuSign, etc)", "nextId": 73 },
+      { "label": "Back to User Menu", "nextId": 10 }
+    ]
+  },
+  {
+    "id": 71,
+    "message": "Install 'Salesforce for Outlook' from Setup. Follow the instructions to connect and sync your email/calendar.",
+    "options": [
+      { "label": "Back to Integrations", "nextId": 70 }
+    ]
+  },
+  {
+    "id": 72,
+    "message": "Salesforce supports REST and SOAP APIs for integration. Get your security token from 'Settings' > 'Reset My Security Token'.",
+    "options": [
+      { "label": "Back to Integrations", "nextId": 70 }
+    ]
+  },
+  {
+    "id": 73,
+    "message": "For apps like Slack or DocuSign, search AppExchange and follow the install/configure steps for your integration.",
+    "options": [
+      { "label": "Back to Integrations", "nextId": 70 }
+    ]
+  },
+
+
+  {
+    "id": 80,
+    "message": "Troubleshooting options:",
+    "options": [
+      { "label": "I get an error when saving a record", "nextId": 81 },
+      { "label": "I can't find an object or field", "nextId": 82 },
+      { "label": "Performance is slow", "nextId": 83 },
+      { "label": "Other issues", "nextId": 100 },
+      { "label": "Back to User Menu", "nextId": 10 }
+    ]
+  },
+  {
+    "id": 81,
+    "message": "Check for required fields or validation rules on the record. If error persists, note the message and contact your admin or support.",
+    "options": [
+      { "label": "Back to Troubleshooting", "nextId": 80 }
+    ]
+  },
+  {
+    "id": 82,
+    "message": "You may not have permission to see this object/field. Contact your admin to verify your profile permissions.",
+    "options": [
+      { "label": "Back to Troubleshooting", "nextId": 80 }
+    ]
+  },
+  {
+    "id": 83,
+    "message": "Try clearing your browser cache or switching browsers. Check trust.salesforce.com for known issues.",
+    "options": [
+      { "label": "Back to Troubleshooting", "nextId": 80 }
+    ]
+  },
+
+
+  {
+    "id": 100,
+    "message": "Please type your question or describe your issue. Or, type 'agent' at any time to connect with a human support representative.",
+    "options": [
+      { "label": "Back to Main Menu", "nextId": 1 }
+    ]
+  },
+  {
+    "id": 200,
+    "message": "Please wait while I connect you to a Salesforce support agent. You can also create a support case at help.salesforce.com.",
+    "options": [
+      { "label": "Back to Main Menu", "nextId": 1 }
     ]
   }
 ]

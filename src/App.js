@@ -1,7 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
 import AgentBot from "./AgentBot";
-import logo from "./hpe-logo-header.png"; // Your PNG logo file in src/
+import VirtualAssistantList from "./VirtualAssistantList"; // <--- Import the new component
+import logo from "./hpe-logo-header.png";
 import "./App.css";
 
 const NAV_LINKS = [
@@ -27,7 +28,7 @@ function LandingPage() {
           <button className="landing-btn" onClick={() => navigate("/agent")}>
             Talk to Chatbot
           </button>
-          <button className="landing-btn">
+          <button className="landing-btn" onClick={() => navigate("/virtual-assistant")}>
             Talk to Virtual Assistant
           </button>
         </div>
@@ -42,6 +43,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/agent" element={<AgentBot />} />
+        <Route path="/virtual-assistant" element={<VirtualAssistantList />} /> {/* <-- New route */}
       </Routes>
     </Router>
   );
